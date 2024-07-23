@@ -1,0 +1,12 @@
+from datetime import timedelta
+
+ACCESS_TOKEN_EXPIRES = timedelta(days=1)
+
+
+class Config:
+    SECRET_KEY = 'e3248f88e8bcc8e0005767cd241e297f8611b9a3ab4670d003da3fdc7c7b'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///InventoryStore.db'
+    JWT_SECRET_KEY = '29a5489043b666b69616b5aa272f77201817f7e021c1afd780d1ab9ebb05a58bc9a36073c9d9ca4a'
+    JWT_ACCESS_TOKEN_EXPIRES = ACCESS_TOKEN_EXPIRES
+    JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
+    SQLALCHEMY_TRACK_MODIFICATIONS = False

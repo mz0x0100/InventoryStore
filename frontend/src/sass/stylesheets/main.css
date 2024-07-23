@@ -1,0 +1,4686 @@
+/* line 5, ../sass/main.scss */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* line 11, ../sass/main.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #7c7f83;
+  border-radius: 6px;
+}
+
+/* line 17, ../sass/main.scss */
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover {
+  background-color: #312e2e;
+}
+
+/* line 23, ../sass/main.scss */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* line 27, ../sass/main.scss */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/main.scss */
+::-moz-selection,
+::-moz-selection {
+  background-color: #1b2f45;
+}
+
+@-moz-keyframes blink {
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #302e2e;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #302e2e;
+  }
+}
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #302e2e;
+  }
+}
+/* line 48, ../sass/main.scss */
+.my-trans {
+  transition: 1s;
+}
+
+/* line 52, ../sass/main.scss */
+.animate-blink {
+  animation: blink 1s infinite ease-in-out;
+}
+
+/* line 57, ../sass/main.scss */
+.top-loader {
+  width: 100%;
+  height: 5px;
+  display: inline-block;
+  background-color: #56b8e6;
+  border: 1px solid #FFF;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  font-size: 30px;
+  background-size: 1em 1em;
+  box-sizing: border-box;
+  animation: barStripe 300ms linear infinite;
+}
+
+@-moz-keyframes barStripe {
+  0% {
+    background-position: 0 1em;
+  }
+  100% {
+    background-position: 1em 0;
+  }
+}
+@-webkit-keyframes barStripe {
+  0% {
+    background-position: 0 1em;
+  }
+  100% {
+    background-position: 1em 0;
+  }
+}
+@keyframes barStripe {
+  0% {
+    background-position: 0 1em;
+  }
+  100% {
+    background-position: 1em 0;
+  }
+}
+/* line 81, ../sass/main.scss */
+.input-icon {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  width: 100%;
+}
+/* line 91, ../sass/main.scss */
+.input-icon .input-element {
+  border: 0;
+  outline: 0;
+  padding: 4px;
+  background-color: inherit;
+  width: 100%;
+}
+/* line 99, ../sass/main.scss */
+.input-icon .icon {
+  width: 20px;
+  margin: auto 0 auto 0;
+}
+
+@-moz-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slide-left {
+  from {
+    transform: translateX(0, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-left {
+  from {
+    transform: translateX(0, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%, 0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%, 0);
+    opacity: 1;
+  }
+}
+/* line 162, ../sass/main.scss */
+.slide-right {
+  animation: slide-right 1s ease-in-out forwards;
+}
+
+/* line 166, ../sass/main.scss */
+.slide-left {
+  animation: slide-left 1s ease-in-out forwards;
+}
+
+/* line 171, ../sass/main.scss */
+.slide-up {
+  animation: slide-up 1s ease-in-out forwards;
+}
+
+/* line 176, ../sass/main.scss */
+.loader-2 {
+  display: block;
+  content: '';
+  background: transparent;
+  border-top: 8px solid rgba(200, 200, 200, 0.5);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* line 187, ../sass/main.scss */
+.loader-regular {
+  display: block;
+  background: transparent;
+  border: 8px solid #ddd;
+  border-top: 8px solid #093b4e;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* .loader-3 {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    margin:auto;
+    display: block;
+    content: '';
+    background: transparent;
+    border-top: 8px solid #4caf50;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+ 
+ } */
+/* line 212, ../sass/main.scss */
+.loader-2::before {
+  display: block;
+  content: '';
+  background: transparent;
+  border-top: 8px solid #56b8e6;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  /* animation-delay: 1s; */
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-100 {
+  font-weight: 100;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-101 {
+  font-weight: 101;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-102 {
+  font-weight: 102;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-103 {
+  font-weight: 103;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-104 {
+  font-weight: 104;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-105 {
+  font-weight: 105;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-106 {
+  font-weight: 106;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-107 {
+  font-weight: 107;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-108 {
+  font-weight: 108;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-109 {
+  font-weight: 109;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-110 {
+  font-weight: 110;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-111 {
+  font-weight: 111;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-112 {
+  font-weight: 112;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-113 {
+  font-weight: 113;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-114 {
+  font-weight: 114;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-115 {
+  font-weight: 115;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-116 {
+  font-weight: 116;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-117 {
+  font-weight: 117;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-118 {
+  font-weight: 118;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-119 {
+  font-weight: 119;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-120 {
+  font-weight: 120;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-121 {
+  font-weight: 121;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-122 {
+  font-weight: 122;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-123 {
+  font-weight: 123;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-124 {
+  font-weight: 124;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-125 {
+  font-weight: 125;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-126 {
+  font-weight: 126;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-127 {
+  font-weight: 127;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-128 {
+  font-weight: 128;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-129 {
+  font-weight: 129;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-130 {
+  font-weight: 130;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-131 {
+  font-weight: 131;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-132 {
+  font-weight: 132;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-133 {
+  font-weight: 133;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-134 {
+  font-weight: 134;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-135 {
+  font-weight: 135;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-136 {
+  font-weight: 136;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-137 {
+  font-weight: 137;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-138 {
+  font-weight: 138;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-139 {
+  font-weight: 139;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-140 {
+  font-weight: 140;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-141 {
+  font-weight: 141;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-142 {
+  font-weight: 142;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-143 {
+  font-weight: 143;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-144 {
+  font-weight: 144;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-145 {
+  font-weight: 145;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-146 {
+  font-weight: 146;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-147 {
+  font-weight: 147;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-148 {
+  font-weight: 148;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-149 {
+  font-weight: 149;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-150 {
+  font-weight: 150;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-151 {
+  font-weight: 151;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-152 {
+  font-weight: 152;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-153 {
+  font-weight: 153;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-154 {
+  font-weight: 154;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-155 {
+  font-weight: 155;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-156 {
+  font-weight: 156;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-157 {
+  font-weight: 157;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-158 {
+  font-weight: 158;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-159 {
+  font-weight: 159;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-160 {
+  font-weight: 160;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-161 {
+  font-weight: 161;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-162 {
+  font-weight: 162;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-163 {
+  font-weight: 163;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-164 {
+  font-weight: 164;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-165 {
+  font-weight: 165;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-166 {
+  font-weight: 166;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-167 {
+  font-weight: 167;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-168 {
+  font-weight: 168;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-169 {
+  font-weight: 169;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-170 {
+  font-weight: 170;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-171 {
+  font-weight: 171;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-172 {
+  font-weight: 172;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-173 {
+  font-weight: 173;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-174 {
+  font-weight: 174;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-175 {
+  font-weight: 175;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-176 {
+  font-weight: 176;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-177 {
+  font-weight: 177;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-178 {
+  font-weight: 178;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-179 {
+  font-weight: 179;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-180 {
+  font-weight: 180;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-181 {
+  font-weight: 181;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-182 {
+  font-weight: 182;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-183 {
+  font-weight: 183;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-184 {
+  font-weight: 184;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-185 {
+  font-weight: 185;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-186 {
+  font-weight: 186;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-187 {
+  font-weight: 187;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-188 {
+  font-weight: 188;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-189 {
+  font-weight: 189;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-190 {
+  font-weight: 190;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-191 {
+  font-weight: 191;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-192 {
+  font-weight: 192;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-193 {
+  font-weight: 193;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-194 {
+  font-weight: 194;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-195 {
+  font-weight: 195;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-196 {
+  font-weight: 196;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-197 {
+  font-weight: 197;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-198 {
+  font-weight: 198;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-199 {
+  font-weight: 199;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-200 {
+  font-weight: 200;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-201 {
+  font-weight: 201;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-202 {
+  font-weight: 202;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-203 {
+  font-weight: 203;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-204 {
+  font-weight: 204;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-205 {
+  font-weight: 205;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-206 {
+  font-weight: 206;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-207 {
+  font-weight: 207;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-208 {
+  font-weight: 208;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-209 {
+  font-weight: 209;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-210 {
+  font-weight: 210;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-211 {
+  font-weight: 211;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-212 {
+  font-weight: 212;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-213 {
+  font-weight: 213;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-214 {
+  font-weight: 214;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-215 {
+  font-weight: 215;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-216 {
+  font-weight: 216;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-217 {
+  font-weight: 217;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-218 {
+  font-weight: 218;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-219 {
+  font-weight: 219;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-220 {
+  font-weight: 220;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-221 {
+  font-weight: 221;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-222 {
+  font-weight: 222;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-223 {
+  font-weight: 223;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-224 {
+  font-weight: 224;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-225 {
+  font-weight: 225;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-226 {
+  font-weight: 226;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-227 {
+  font-weight: 227;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-228 {
+  font-weight: 228;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-229 {
+  font-weight: 229;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-230 {
+  font-weight: 230;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-231 {
+  font-weight: 231;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-232 {
+  font-weight: 232;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-233 {
+  font-weight: 233;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-234 {
+  font-weight: 234;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-235 {
+  font-weight: 235;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-236 {
+  font-weight: 236;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-237 {
+  font-weight: 237;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-238 {
+  font-weight: 238;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-239 {
+  font-weight: 239;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-240 {
+  font-weight: 240;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-241 {
+  font-weight: 241;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-242 {
+  font-weight: 242;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-243 {
+  font-weight: 243;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-244 {
+  font-weight: 244;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-245 {
+  font-weight: 245;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-246 {
+  font-weight: 246;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-247 {
+  font-weight: 247;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-248 {
+  font-weight: 248;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-249 {
+  font-weight: 249;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-250 {
+  font-weight: 250;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-251 {
+  font-weight: 251;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-252 {
+  font-weight: 252;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-253 {
+  font-weight: 253;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-254 {
+  font-weight: 254;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-255 {
+  font-weight: 255;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-256 {
+  font-weight: 256;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-257 {
+  font-weight: 257;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-258 {
+  font-weight: 258;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-259 {
+  font-weight: 259;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-260 {
+  font-weight: 260;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-261 {
+  font-weight: 261;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-262 {
+  font-weight: 262;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-263 {
+  font-weight: 263;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-264 {
+  font-weight: 264;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-265 {
+  font-weight: 265;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-266 {
+  font-weight: 266;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-267 {
+  font-weight: 267;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-268 {
+  font-weight: 268;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-269 {
+  font-weight: 269;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-270 {
+  font-weight: 270;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-271 {
+  font-weight: 271;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-272 {
+  font-weight: 272;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-273 {
+  font-weight: 273;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-274 {
+  font-weight: 274;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-275 {
+  font-weight: 275;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-276 {
+  font-weight: 276;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-277 {
+  font-weight: 277;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-278 {
+  font-weight: 278;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-279 {
+  font-weight: 279;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-280 {
+  font-weight: 280;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-281 {
+  font-weight: 281;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-282 {
+  font-weight: 282;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-283 {
+  font-weight: 283;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-284 {
+  font-weight: 284;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-285 {
+  font-weight: 285;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-286 {
+  font-weight: 286;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-287 {
+  font-weight: 287;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-288 {
+  font-weight: 288;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-289 {
+  font-weight: 289;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-290 {
+  font-weight: 290;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-291 {
+  font-weight: 291;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-292 {
+  font-weight: 292;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-293 {
+  font-weight: 293;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-294 {
+  font-weight: 294;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-295 {
+  font-weight: 295;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-296 {
+  font-weight: 296;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-297 {
+  font-weight: 297;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-298 {
+  font-weight: 298;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-299 {
+  font-weight: 299;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-300 {
+  font-weight: 300;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-301 {
+  font-weight: 301;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-302 {
+  font-weight: 302;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-303 {
+  font-weight: 303;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-304 {
+  font-weight: 304;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-305 {
+  font-weight: 305;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-306 {
+  font-weight: 306;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-307 {
+  font-weight: 307;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-308 {
+  font-weight: 308;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-309 {
+  font-weight: 309;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-310 {
+  font-weight: 310;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-311 {
+  font-weight: 311;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-312 {
+  font-weight: 312;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-313 {
+  font-weight: 313;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-314 {
+  font-weight: 314;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-315 {
+  font-weight: 315;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-316 {
+  font-weight: 316;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-317 {
+  font-weight: 317;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-318 {
+  font-weight: 318;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-319 {
+  font-weight: 319;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-320 {
+  font-weight: 320;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-321 {
+  font-weight: 321;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-322 {
+  font-weight: 322;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-323 {
+  font-weight: 323;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-324 {
+  font-weight: 324;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-325 {
+  font-weight: 325;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-326 {
+  font-weight: 326;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-327 {
+  font-weight: 327;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-328 {
+  font-weight: 328;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-329 {
+  font-weight: 329;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-330 {
+  font-weight: 330;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-331 {
+  font-weight: 331;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-332 {
+  font-weight: 332;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-333 {
+  font-weight: 333;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-334 {
+  font-weight: 334;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-335 {
+  font-weight: 335;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-336 {
+  font-weight: 336;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-337 {
+  font-weight: 337;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-338 {
+  font-weight: 338;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-339 {
+  font-weight: 339;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-340 {
+  font-weight: 340;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-341 {
+  font-weight: 341;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-342 {
+  font-weight: 342;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-343 {
+  font-weight: 343;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-344 {
+  font-weight: 344;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-345 {
+  font-weight: 345;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-346 {
+  font-weight: 346;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-347 {
+  font-weight: 347;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-348 {
+  font-weight: 348;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-349 {
+  font-weight: 349;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-350 {
+  font-weight: 350;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-351 {
+  font-weight: 351;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-352 {
+  font-weight: 352;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-353 {
+  font-weight: 353;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-354 {
+  font-weight: 354;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-355 {
+  font-weight: 355;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-356 {
+  font-weight: 356;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-357 {
+  font-weight: 357;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-358 {
+  font-weight: 358;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-359 {
+  font-weight: 359;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-360 {
+  font-weight: 360;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-361 {
+  font-weight: 361;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-362 {
+  font-weight: 362;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-363 {
+  font-weight: 363;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-364 {
+  font-weight: 364;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-365 {
+  font-weight: 365;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-366 {
+  font-weight: 366;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-367 {
+  font-weight: 367;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-368 {
+  font-weight: 368;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-369 {
+  font-weight: 369;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-370 {
+  font-weight: 370;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-371 {
+  font-weight: 371;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-372 {
+  font-weight: 372;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-373 {
+  font-weight: 373;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-374 {
+  font-weight: 374;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-375 {
+  font-weight: 375;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-376 {
+  font-weight: 376;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-377 {
+  font-weight: 377;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-378 {
+  font-weight: 378;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-379 {
+  font-weight: 379;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-380 {
+  font-weight: 380;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-381 {
+  font-weight: 381;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-382 {
+  font-weight: 382;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-383 {
+  font-weight: 383;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-384 {
+  font-weight: 384;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-385 {
+  font-weight: 385;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-386 {
+  font-weight: 386;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-387 {
+  font-weight: 387;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-388 {
+  font-weight: 388;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-389 {
+  font-weight: 389;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-390 {
+  font-weight: 390;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-391 {
+  font-weight: 391;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-392 {
+  font-weight: 392;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-393 {
+  font-weight: 393;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-394 {
+  font-weight: 394;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-395 {
+  font-weight: 395;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-396 {
+  font-weight: 396;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-397 {
+  font-weight: 397;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-398 {
+  font-weight: 398;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-399 {
+  font-weight: 399;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-400 {
+  font-weight: 400;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-401 {
+  font-weight: 401;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-402 {
+  font-weight: 402;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-403 {
+  font-weight: 403;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-404 {
+  font-weight: 404;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-405 {
+  font-weight: 405;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-406 {
+  font-weight: 406;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-407 {
+  font-weight: 407;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-408 {
+  font-weight: 408;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-409 {
+  font-weight: 409;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-410 {
+  font-weight: 410;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-411 {
+  font-weight: 411;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-412 {
+  font-weight: 412;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-413 {
+  font-weight: 413;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-414 {
+  font-weight: 414;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-415 {
+  font-weight: 415;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-416 {
+  font-weight: 416;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-417 {
+  font-weight: 417;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-418 {
+  font-weight: 418;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-419 {
+  font-weight: 419;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-420 {
+  font-weight: 420;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-421 {
+  font-weight: 421;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-422 {
+  font-weight: 422;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-423 {
+  font-weight: 423;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-424 {
+  font-weight: 424;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-425 {
+  font-weight: 425;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-426 {
+  font-weight: 426;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-427 {
+  font-weight: 427;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-428 {
+  font-weight: 428;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-429 {
+  font-weight: 429;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-430 {
+  font-weight: 430;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-431 {
+  font-weight: 431;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-432 {
+  font-weight: 432;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-433 {
+  font-weight: 433;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-434 {
+  font-weight: 434;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-435 {
+  font-weight: 435;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-436 {
+  font-weight: 436;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-437 {
+  font-weight: 437;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-438 {
+  font-weight: 438;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-439 {
+  font-weight: 439;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-440 {
+  font-weight: 440;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-441 {
+  font-weight: 441;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-442 {
+  font-weight: 442;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-443 {
+  font-weight: 443;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-444 {
+  font-weight: 444;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-445 {
+  font-weight: 445;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-446 {
+  font-weight: 446;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-447 {
+  font-weight: 447;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-448 {
+  font-weight: 448;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-449 {
+  font-weight: 449;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-450 {
+  font-weight: 450;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-451 {
+  font-weight: 451;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-452 {
+  font-weight: 452;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-453 {
+  font-weight: 453;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-454 {
+  font-weight: 454;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-455 {
+  font-weight: 455;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-456 {
+  font-weight: 456;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-457 {
+  font-weight: 457;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-458 {
+  font-weight: 458;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-459 {
+  font-weight: 459;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-460 {
+  font-weight: 460;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-461 {
+  font-weight: 461;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-462 {
+  font-weight: 462;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-463 {
+  font-weight: 463;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-464 {
+  font-weight: 464;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-465 {
+  font-weight: 465;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-466 {
+  font-weight: 466;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-467 {
+  font-weight: 467;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-468 {
+  font-weight: 468;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-469 {
+  font-weight: 469;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-470 {
+  font-weight: 470;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-471 {
+  font-weight: 471;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-472 {
+  font-weight: 472;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-473 {
+  font-weight: 473;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-474 {
+  font-weight: 474;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-475 {
+  font-weight: 475;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-476 {
+  font-weight: 476;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-477 {
+  font-weight: 477;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-478 {
+  font-weight: 478;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-479 {
+  font-weight: 479;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-480 {
+  font-weight: 480;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-481 {
+  font-weight: 481;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-482 {
+  font-weight: 482;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-483 {
+  font-weight: 483;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-484 {
+  font-weight: 484;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-485 {
+  font-weight: 485;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-486 {
+  font-weight: 486;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-487 {
+  font-weight: 487;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-488 {
+  font-weight: 488;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-489 {
+  font-weight: 489;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-490 {
+  font-weight: 490;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-491 {
+  font-weight: 491;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-492 {
+  font-weight: 492;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-493 {
+  font-weight: 493;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-494 {
+  font-weight: 494;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-495 {
+  font-weight: 495;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-496 {
+  font-weight: 496;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-497 {
+  font-weight: 497;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-498 {
+  font-weight: 498;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-499 {
+  font-weight: 499;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-500 {
+  font-weight: 500;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-501 {
+  font-weight: 501;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-502 {
+  font-weight: 502;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-503 {
+  font-weight: 503;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-504 {
+  font-weight: 504;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-505 {
+  font-weight: 505;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-506 {
+  font-weight: 506;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-507 {
+  font-weight: 507;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-508 {
+  font-weight: 508;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-509 {
+  font-weight: 509;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-510 {
+  font-weight: 510;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-511 {
+  font-weight: 511;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-512 {
+  font-weight: 512;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-513 {
+  font-weight: 513;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-514 {
+  font-weight: 514;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-515 {
+  font-weight: 515;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-516 {
+  font-weight: 516;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-517 {
+  font-weight: 517;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-518 {
+  font-weight: 518;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-519 {
+  font-weight: 519;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-520 {
+  font-weight: 520;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-521 {
+  font-weight: 521;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-522 {
+  font-weight: 522;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-523 {
+  font-weight: 523;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-524 {
+  font-weight: 524;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-525 {
+  font-weight: 525;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-526 {
+  font-weight: 526;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-527 {
+  font-weight: 527;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-528 {
+  font-weight: 528;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-529 {
+  font-weight: 529;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-530 {
+  font-weight: 530;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-531 {
+  font-weight: 531;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-532 {
+  font-weight: 532;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-533 {
+  font-weight: 533;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-534 {
+  font-weight: 534;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-535 {
+  font-weight: 535;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-536 {
+  font-weight: 536;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-537 {
+  font-weight: 537;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-538 {
+  font-weight: 538;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-539 {
+  font-weight: 539;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-540 {
+  font-weight: 540;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-541 {
+  font-weight: 541;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-542 {
+  font-weight: 542;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-543 {
+  font-weight: 543;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-544 {
+  font-weight: 544;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-545 {
+  font-weight: 545;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-546 {
+  font-weight: 546;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-547 {
+  font-weight: 547;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-548 {
+  font-weight: 548;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-549 {
+  font-weight: 549;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-550 {
+  font-weight: 550;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-551 {
+  font-weight: 551;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-552 {
+  font-weight: 552;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-553 {
+  font-weight: 553;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-554 {
+  font-weight: 554;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-555 {
+  font-weight: 555;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-556 {
+  font-weight: 556;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-557 {
+  font-weight: 557;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-558 {
+  font-weight: 558;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-559 {
+  font-weight: 559;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-560 {
+  font-weight: 560;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-561 {
+  font-weight: 561;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-562 {
+  font-weight: 562;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-563 {
+  font-weight: 563;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-564 {
+  font-weight: 564;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-565 {
+  font-weight: 565;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-566 {
+  font-weight: 566;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-567 {
+  font-weight: 567;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-568 {
+  font-weight: 568;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-569 {
+  font-weight: 569;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-570 {
+  font-weight: 570;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-571 {
+  font-weight: 571;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-572 {
+  font-weight: 572;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-573 {
+  font-weight: 573;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-574 {
+  font-weight: 574;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-575 {
+  font-weight: 575;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-576 {
+  font-weight: 576;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-577 {
+  font-weight: 577;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-578 {
+  font-weight: 578;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-579 {
+  font-weight: 579;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-580 {
+  font-weight: 580;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-581 {
+  font-weight: 581;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-582 {
+  font-weight: 582;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-583 {
+  font-weight: 583;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-584 {
+  font-weight: 584;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-585 {
+  font-weight: 585;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-586 {
+  font-weight: 586;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-587 {
+  font-weight: 587;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-588 {
+  font-weight: 588;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-589 {
+  font-weight: 589;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-590 {
+  font-weight: 590;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-591 {
+  font-weight: 591;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-592 {
+  font-weight: 592;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-593 {
+  font-weight: 593;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-594 {
+  font-weight: 594;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-595 {
+  font-weight: 595;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-596 {
+  font-weight: 596;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-597 {
+  font-weight: 597;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-598 {
+  font-weight: 598;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-599 {
+  font-weight: 599;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-600 {
+  font-weight: 600;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-601 {
+  font-weight: 601;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-602 {
+  font-weight: 602;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-603 {
+  font-weight: 603;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-604 {
+  font-weight: 604;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-605 {
+  font-weight: 605;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-606 {
+  font-weight: 606;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-607 {
+  font-weight: 607;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-608 {
+  font-weight: 608;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-609 {
+  font-weight: 609;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-610 {
+  font-weight: 610;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-611 {
+  font-weight: 611;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-612 {
+  font-weight: 612;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-613 {
+  font-weight: 613;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-614 {
+  font-weight: 614;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-615 {
+  font-weight: 615;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-616 {
+  font-weight: 616;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-617 {
+  font-weight: 617;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-618 {
+  font-weight: 618;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-619 {
+  font-weight: 619;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-620 {
+  font-weight: 620;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-621 {
+  font-weight: 621;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-622 {
+  font-weight: 622;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-623 {
+  font-weight: 623;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-624 {
+  font-weight: 624;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-625 {
+  font-weight: 625;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-626 {
+  font-weight: 626;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-627 {
+  font-weight: 627;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-628 {
+  font-weight: 628;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-629 {
+  font-weight: 629;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-630 {
+  font-weight: 630;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-631 {
+  font-weight: 631;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-632 {
+  font-weight: 632;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-633 {
+  font-weight: 633;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-634 {
+  font-weight: 634;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-635 {
+  font-weight: 635;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-636 {
+  font-weight: 636;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-637 {
+  font-weight: 637;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-638 {
+  font-weight: 638;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-639 {
+  font-weight: 639;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-640 {
+  font-weight: 640;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-641 {
+  font-weight: 641;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-642 {
+  font-weight: 642;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-643 {
+  font-weight: 643;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-644 {
+  font-weight: 644;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-645 {
+  font-weight: 645;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-646 {
+  font-weight: 646;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-647 {
+  font-weight: 647;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-648 {
+  font-weight: 648;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-649 {
+  font-weight: 649;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-650 {
+  font-weight: 650;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-651 {
+  font-weight: 651;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-652 {
+  font-weight: 652;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-653 {
+  font-weight: 653;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-654 {
+  font-weight: 654;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-655 {
+  font-weight: 655;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-656 {
+  font-weight: 656;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-657 {
+  font-weight: 657;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-658 {
+  font-weight: 658;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-659 {
+  font-weight: 659;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-660 {
+  font-weight: 660;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-661 {
+  font-weight: 661;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-662 {
+  font-weight: 662;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-663 {
+  font-weight: 663;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-664 {
+  font-weight: 664;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-665 {
+  font-weight: 665;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-666 {
+  font-weight: 666;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-667 {
+  font-weight: 667;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-668 {
+  font-weight: 668;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-669 {
+  font-weight: 669;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-670 {
+  font-weight: 670;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-671 {
+  font-weight: 671;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-672 {
+  font-weight: 672;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-673 {
+  font-weight: 673;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-674 {
+  font-weight: 674;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-675 {
+  font-weight: 675;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-676 {
+  font-weight: 676;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-677 {
+  font-weight: 677;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-678 {
+  font-weight: 678;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-679 {
+  font-weight: 679;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-680 {
+  font-weight: 680;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-681 {
+  font-weight: 681;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-682 {
+  font-weight: 682;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-683 {
+  font-weight: 683;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-684 {
+  font-weight: 684;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-685 {
+  font-weight: 685;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-686 {
+  font-weight: 686;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-687 {
+  font-weight: 687;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-688 {
+  font-weight: 688;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-689 {
+  font-weight: 689;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-690 {
+  font-weight: 690;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-691 {
+  font-weight: 691;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-692 {
+  font-weight: 692;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-693 {
+  font-weight: 693;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-694 {
+  font-weight: 694;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-695 {
+  font-weight: 695;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-696 {
+  font-weight: 696;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-697 {
+  font-weight: 697;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-698 {
+  font-weight: 698;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-699 {
+  font-weight: 699;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-700 {
+  font-weight: 700;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-701 {
+  font-weight: 701;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-702 {
+  font-weight: 702;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-703 {
+  font-weight: 703;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-704 {
+  font-weight: 704;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-705 {
+  font-weight: 705;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-706 {
+  font-weight: 706;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-707 {
+  font-weight: 707;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-708 {
+  font-weight: 708;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-709 {
+  font-weight: 709;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-710 {
+  font-weight: 710;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-711 {
+  font-weight: 711;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-712 {
+  font-weight: 712;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-713 {
+  font-weight: 713;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-714 {
+  font-weight: 714;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-715 {
+  font-weight: 715;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-716 {
+  font-weight: 716;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-717 {
+  font-weight: 717;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-718 {
+  font-weight: 718;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-719 {
+  font-weight: 719;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-720 {
+  font-weight: 720;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-721 {
+  font-weight: 721;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-722 {
+  font-weight: 722;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-723 {
+  font-weight: 723;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-724 {
+  font-weight: 724;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-725 {
+  font-weight: 725;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-726 {
+  font-weight: 726;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-727 {
+  font-weight: 727;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-728 {
+  font-weight: 728;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-729 {
+  font-weight: 729;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-730 {
+  font-weight: 730;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-731 {
+  font-weight: 731;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-732 {
+  font-weight: 732;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-733 {
+  font-weight: 733;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-734 {
+  font-weight: 734;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-735 {
+  font-weight: 735;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-736 {
+  font-weight: 736;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-737 {
+  font-weight: 737;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-738 {
+  font-weight: 738;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-739 {
+  font-weight: 739;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-740 {
+  font-weight: 740;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-741 {
+  font-weight: 741;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-742 {
+  font-weight: 742;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-743 {
+  font-weight: 743;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-744 {
+  font-weight: 744;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-745 {
+  font-weight: 745;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-746 {
+  font-weight: 746;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-747 {
+  font-weight: 747;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-748 {
+  font-weight: 748;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-749 {
+  font-weight: 749;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-750 {
+  font-weight: 750;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-751 {
+  font-weight: 751;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-752 {
+  font-weight: 752;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-753 {
+  font-weight: 753;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-754 {
+  font-weight: 754;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-755 {
+  font-weight: 755;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-756 {
+  font-weight: 756;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-757 {
+  font-weight: 757;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-758 {
+  font-weight: 758;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-759 {
+  font-weight: 759;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-760 {
+  font-weight: 760;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-761 {
+  font-weight: 761;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-762 {
+  font-weight: 762;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-763 {
+  font-weight: 763;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-764 {
+  font-weight: 764;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-765 {
+  font-weight: 765;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-766 {
+  font-weight: 766;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-767 {
+  font-weight: 767;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-768 {
+  font-weight: 768;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-769 {
+  font-weight: 769;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-770 {
+  font-weight: 770;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-771 {
+  font-weight: 771;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-772 {
+  font-weight: 772;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-773 {
+  font-weight: 773;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-774 {
+  font-weight: 774;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-775 {
+  font-weight: 775;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-776 {
+  font-weight: 776;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-777 {
+  font-weight: 777;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-778 {
+  font-weight: 778;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-779 {
+  font-weight: 779;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-780 {
+  font-weight: 780;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-781 {
+  font-weight: 781;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-782 {
+  font-weight: 782;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-783 {
+  font-weight: 783;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-784 {
+  font-weight: 784;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-785 {
+  font-weight: 785;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-786 {
+  font-weight: 786;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-787 {
+  font-weight: 787;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-788 {
+  font-weight: 788;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-789 {
+  font-weight: 789;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-790 {
+  font-weight: 790;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-791 {
+  font-weight: 791;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-792 {
+  font-weight: 792;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-793 {
+  font-weight: 793;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-794 {
+  font-weight: 794;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-795 {
+  font-weight: 795;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-796 {
+  font-weight: 796;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-797 {
+  font-weight: 797;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-798 {
+  font-weight: 798;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-799 {
+  font-weight: 799;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-800 {
+  font-weight: 800;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-801 {
+  font-weight: 801;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-802 {
+  font-weight: 802;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-803 {
+  font-weight: 803;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-804 {
+  font-weight: 804;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-805 {
+  font-weight: 805;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-806 {
+  font-weight: 806;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-807 {
+  font-weight: 807;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-808 {
+  font-weight: 808;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-809 {
+  font-weight: 809;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-810 {
+  font-weight: 810;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-811 {
+  font-weight: 811;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-812 {
+  font-weight: 812;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-813 {
+  font-weight: 813;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-814 {
+  font-weight: 814;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-815 {
+  font-weight: 815;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-816 {
+  font-weight: 816;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-817 {
+  font-weight: 817;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-818 {
+  font-weight: 818;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-819 {
+  font-weight: 819;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-820 {
+  font-weight: 820;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-821 {
+  font-weight: 821;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-822 {
+  font-weight: 822;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-823 {
+  font-weight: 823;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-824 {
+  font-weight: 824;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-825 {
+  font-weight: 825;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-826 {
+  font-weight: 826;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-827 {
+  font-weight: 827;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-828 {
+  font-weight: 828;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-829 {
+  font-weight: 829;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-830 {
+  font-weight: 830;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-831 {
+  font-weight: 831;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-832 {
+  font-weight: 832;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-833 {
+  font-weight: 833;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-834 {
+  font-weight: 834;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-835 {
+  font-weight: 835;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-836 {
+  font-weight: 836;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-837 {
+  font-weight: 837;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-838 {
+  font-weight: 838;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-839 {
+  font-weight: 839;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-840 {
+  font-weight: 840;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-841 {
+  font-weight: 841;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-842 {
+  font-weight: 842;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-843 {
+  font-weight: 843;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-844 {
+  font-weight: 844;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-845 {
+  font-weight: 845;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-846 {
+  font-weight: 846;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-847 {
+  font-weight: 847;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-848 {
+  font-weight: 848;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-849 {
+  font-weight: 849;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-850 {
+  font-weight: 850;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-851 {
+  font-weight: 851;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-852 {
+  font-weight: 852;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-853 {
+  font-weight: 853;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-854 {
+  font-weight: 854;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-855 {
+  font-weight: 855;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-856 {
+  font-weight: 856;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-857 {
+  font-weight: 857;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-858 {
+  font-weight: 858;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-859 {
+  font-weight: 859;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-860 {
+  font-weight: 860;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-861 {
+  font-weight: 861;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-862 {
+  font-weight: 862;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-863 {
+  font-weight: 863;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-864 {
+  font-weight: 864;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-865 {
+  font-weight: 865;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-866 {
+  font-weight: 866;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-867 {
+  font-weight: 867;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-868 {
+  font-weight: 868;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-869 {
+  font-weight: 869;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-870 {
+  font-weight: 870;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-871 {
+  font-weight: 871;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-872 {
+  font-weight: 872;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-873 {
+  font-weight: 873;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-874 {
+  font-weight: 874;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-875 {
+  font-weight: 875;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-876 {
+  font-weight: 876;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-877 {
+  font-weight: 877;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-878 {
+  font-weight: 878;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-879 {
+  font-weight: 879;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-880 {
+  font-weight: 880;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-881 {
+  font-weight: 881;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-882 {
+  font-weight: 882;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-883 {
+  font-weight: 883;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-884 {
+  font-weight: 884;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-885 {
+  font-weight: 885;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-886 {
+  font-weight: 886;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-887 {
+  font-weight: 887;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-888 {
+  font-weight: 888;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-889 {
+  font-weight: 889;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-890 {
+  font-weight: 890;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-891 {
+  font-weight: 891;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-892 {
+  font-weight: 892;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-893 {
+  font-weight: 893;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-894 {
+  font-weight: 894;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-895 {
+  font-weight: 895;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-896 {
+  font-weight: 896;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-897 {
+  font-weight: 897;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-898 {
+  font-weight: 898;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-899 {
+  font-weight: 899;
+}
+
+/* line 225, ../sass/main.scss */
+.font-weight-900 {
+  font-weight: 900;
+}
+
+/* line 231, ../sass/main.scss */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/img/hero2.jpg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0;
+  z-index: 3;
+}
+
+/* line 241, ../sass/main.scss */
+.my-panels-container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 90px);
+}
+
+/* line 247, ../sass/main.scss */
+.flex-container {
+  display: flex;
+  flex: 1;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-1 {
+  z-index: 1;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-2 {
+  z-index: 2;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-3 {
+  z-index: 3;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-4 {
+  z-index: 4;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-5 {
+  z-index: 5;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-6 {
+  z-index: 6;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-7 {
+  z-index: 7;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-8 {
+  z-index: 8;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-9 {
+  z-index: 9;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-10 {
+  z-index: 10;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-11 {
+  z-index: 11;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-12 {
+  z-index: 12;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-13 {
+  z-index: 13;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-14 {
+  z-index: 14;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-15 {
+  z-index: 15;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-16 {
+  z-index: 16;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-17 {
+  z-index: 17;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-18 {
+  z-index: 18;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-19 {
+  z-index: 19;
+}
+
+/* line 253, ../sass/main.scss */
+.z-index-20 {
+  z-index: 20;
+}
+
+/* Customize the label (the container) */
+/* line 259, ../sass/main.scss */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+/* line 269, ../sass/main.scss */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 276, ../sass/main.scss */
+.radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+/* line 286, ../sass/main.scss */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+/* When the radio button is checked, add a blue background */
+/* line 291, ../sass/main.scss */
+.radio-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* line 295, ../sass/main.scss */
+.radio-container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* line 307, ../sass/main.scss */
+.radio-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* The switch - the box around the slider */
+/* line 313, ../sass/main.scss */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+/* line 321, ../sass/main.scss */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+/* line 326, ../sass/main.scss */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 338, ../sass/main.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 350, ../sass/main.scss */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* line 354, ../sass/main.scss */
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* line 358, ../sass/main.scss */
+input:checked + .slider:before {
+  -moz-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  -webkit-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+/* line 363, ../sass/main.scss */
+.slider.round {
+  border-radius: 34px;
+}
+
+/* line 367, ../sass/main.scss */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* line 372, ../sass/main.scss */
+.footer ul {
+  list-style: none;
+  margin-top: 4px;
+}
+/* line 376, ../sass/main.scss */
+.footer ul li {
+  margin-top: 8px;
+}
+
+/* line 382, ../sass/main.scss */
+.enrollment-figure {
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("/src/assets/img/hero3.jpg") center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+/* line 390, ../sass/main.scss */
+.enrollment-figure {
+  background-attachment: fixed;
+}
+
+/* line 395, ../sass/main.scss */
+.theme-classic {
+  background-image: url("/src/assets/img/fold-d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 400, ../sass/main.scss */
+.theme-classic .theme-bg {
+  background: rgba(200, 200, 255, 0.7);
+}
+/* line 404, ../sass/main.scss */
+.theme-classic .nav-text {
+  color: #eeeaea;
+}
+/* line 408, ../sass/main.scss */
+.theme-classic .nav-bg {
+  background: rgba(97, 174, 236, 0.5);
+}
+
+/* line 414, ../sass/main.scss */
+.theme-light .theme-bg {
+  background: white;
+}
+/* line 418, ../sass/main.scss */
+.theme-light .nav-text {
+  color: #ccc;
+}
+/* line 422, ../sass/main.scss */
+.theme-light .nav-bg {
+  background: #1b2f45;
+}
+/* line 426, ../sass/main.scss */
+.theme-light .footer .theme-bg {
+  background: #c9cacc;
+}
+
+/* line 431, ../sass/main.scss */
+.theme-dark {
+  background-color: #302e2e;
+  color: #ccc;
+}
+/* line 436, ../sass/main.scss */
+.theme-dark .theme-bg {
+  background: #302e2e;
+}
+/* line 440, ../sass/main.scss */
+.theme-dark .nav-text {
+  color: #ccc;
+}
+/* line 444, ../sass/main.scss */
+.theme-dark .nav-bg {
+  background: #1b2f45;
+}
+/* line 448, ../sass/main.scss */
+.theme-dark .footer .theme-bg {
+  background: #302e2e;
+}
+
+/* line 453, ../sass/main.scss */
+.text-no-break {
+  white-space: pre-wrap;
+}

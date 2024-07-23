@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
-import { NavItemType } from "./components/TopNav";
 import Scroller from "./utils/Scroller";
-import Staffs from "./routes/Staffs";
 import { useEffect } from "react";
 import { isIn } from "./utils/utils";
 import { APIRequestErrorNotifier } from "./utils/Notifier";
@@ -14,9 +12,7 @@ import LoginView from "./routes/LoginView";
 import Page404 from "./routes/Page404";
 import Logout from "./routes/Logout";
 import { useTheme } from "./utils/contexts/ThemeContext";
-import StaffUserProfile from "./routes/staffuser.tsx/StaffUserProfile";
 import { useCurrentUser } from "./utils/contexts/CurrentUserContext";
-import StaffUpdatePassword from "./routes/staffuser.tsx/StaffUpdatePassword";
 import AdminLayout from "./routes/admin/AdminLayout";
 import Products from "./routes/layouts/Products";
 import Categories from "./routes/layouts/Categories";
@@ -24,13 +20,6 @@ import Suppliers from "./routes/layouts/Suppliers";
 
 // For accessing VITE env variables
 export const REACT_APP_API_URL = import.meta.env.VITE_REACT_APP_API_URL;
-export const navItems: NavItemType[] = [
-  { text: "Home", linkTo: "/" },
-  { text: "Schools", linkTo: "/schools" },
-  { text: "Staffs", linkTo: "/staffs" },
-  // { text: "About", linkTo: "#" },
-  { text: "Contact", linkTo: "#contact" },
-];
 
 const App: React.FC = () => {
   const { currentUser, setCurrentUser } = useCurrentUser();
